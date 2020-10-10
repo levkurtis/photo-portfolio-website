@@ -95,24 +95,26 @@ header {
 
 .portfolio {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-auto-rows: 350px;
+  grid-template-columns: repeat(autofill, 1fr);
+  grid-auto-rows: 200px;
   gap: 16px;
   margin: 40px 0;
 }
+
+
 
 .card {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  border-radius: 5px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   margin: 20px;
   transition: all 0.3 ease 0s;
 }
-.card:nth-child(1) {
+
+/* .card:nth-child(2) {
   background-image: url("Portfolio/KURTIS_2020-09-11_MK_3059-positive.jpg");
 }
 .card:nth-child(2) {
@@ -129,9 +131,9 @@ header {
 }
 .card:nth-child(6) {
   background-image: url("Portfolio/KURTIS_2020-09-11_MK_3121-positive.jpg");
-}
+} */
 
-.card:nth-child(1),
+/* .card:nth-child(1),
 :nth-child(3) {
   grid-column-start: span 3;
 }
@@ -141,7 +143,7 @@ header {
 :nth-child(5),
 :nth-child(6) {
   grid-column-start: span 2;
-}
+} */
 
 @media screen and (max-width: 750px) {
   .content {
