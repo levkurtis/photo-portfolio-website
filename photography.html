@@ -12,6 +12,23 @@
   </head>
 
   <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script>
+      //Activating Masonry after images has been loaded
+      $(".grid").imagesLoaded(function () {
+        $(".grid").masonry({
+          itemSelector: ".grid-item",
+        });
+      });
+    </script>
+    <script>
+      // Grid column width
+      $(".grid").masonry({
+        columnWidth: 1502,
+      });
+    </script>
     <!-- Navbar for site -->
     <header>
       <div class="logo">
@@ -26,132 +43,32 @@
       </ul>
     </header>
     <!-- Content of the page -->
-    <div class="portfolio">
-      <div
-        class="card"
-        style="background-image: url(Portfolio/card1.jpg)";>
-        1
-      </div>
-      <div
-        class="card"
-        style="background-image: url(Portfolio/card2.jpg);">
-        2
-      </div>
-      <div
-        class="card"
-        style="background-image: url(Portfolio/card3.jpg);">
-        3
-      </div>
-      <div
-        class="card"
-        style="background-image: url(Portfolio/card4.jpg);">
-        4
-      </div>
-      <div
-        class="card"
-        style="background-image: url(Portfolio/card5.jpg);">
-        5
-      </div>
-      <div
-        class="card"
-        style="background-image: url(Portfolio/card6.jpg);">
-        6
-      </div>
-      <div
-        class="card"
-        style="background-image: url(Portfolio/card7.jpg);">
-        7
-      </div>
-      <div
-        class="card"
-        style="background-image: url(Portfolio/card8.jpg);">
-        8
-      </div>
-      <div
-        class="card"
-        style="background-image: url(Portfolio/card9.jpg);">
-        9
-      </div>
-      <div
-        class="card"
-        style="background-image: url(Portfolio/card10.jpg);">
-        10
-      </div>
-      <div
-        class="card"
-        style="background-image: url(Portfolio/card11.jpg);">
-        11
-      </div>
-      <div
-        class="card"
-        style="background-image: url(Portfolio/card12.jpg);">
-        12
-      </div>
-      <div
-        class="card"
-        style="background-image: url(Portfolio/card13.jpg);">
-        13
-      </div>
-      <div
-        class="card"
-        style="background-image: url(Portfolio/card14.jpg);">
-        14
-      </div>
-      <div
-        class="card"
-        style="background-image: url(Portfolio/card15.jpg);">
-        15
-      </div>
-      <div
-        class="card"
-        style="background-image: url(Portfolio/card16.jpg);">
-        16
-      </div>
-      <div
-        class="card"
-        style="background-image: url(Portfolio/card17.jpg);">
-        17
-      </div>
-      <div
-        class="card"
-        style="background-image: url(Portfolio/card18.jpg);">
-        18
-      </div>
-      <div
-        class="card"
-        style="background-image: url(Portfolio/card19.jpg);">
-        19
-      </div>
-      <div
-        class="card"
-        style="background-image: url(Portfolio/card20.jpg);">
-        20
-      </div>
-      <div
-        class="card"
-        style="background-image: url(Portfolio/card21.jpg);">
-        21
-      </div>
-      <div
-        class="card"
-        style="background-image: url(Portfolio/card21.jpg);">
-        22
-      </div>
-      <div
-        class="card"
-        style="background-image: url(Portfolio/card21.jpg);">
-        23
-      </div>
-      <div
-        class="card"
-        style="background-image: url(Portfolio/card21.jpg);">
-        24
-      </div>
-      <div
-        class="card"
-        style="background-image: url(Portfolio/card21.jpg);">
-        25
-      </div>
+    <div class="grid">
+      <div class="grid-item"><img src="portfolio/card1.jpg" alt="" /></div>
+      <div class="grid-item"><img src="portfolio/card2.jpg" alt="" /></div>
+      <div class="grid-item"><img src="portfolio/card3.jpg" alt="" /></div>
+      <div class="grid-item"><img src="portfolio/card4.jpg" alt="" /></div>
+      <div class="grid-item"><img src="portfolio/card5.jpg" alt="" /></div>
+      <div class="grid-item"><img src="portfolio/card6.jpg" alt="" /></div>
+      <div class="grid-item"><img src="portfolio/card7.jpg" alt="" /></div>
+      <div class="grid-item"><img src="portfolio/card8.jpg" alt="" /></div>
+      <div class="grid-item"><img src="portfolio/card9.jpg" alt="" /></div>
+      <div class="grid-item"><img src="portfolio/card10.jpg" alt="" /></div>
+      <div class="grid-item"><img src="portfolio/card11.jpg" alt="" /></div>
+      <div class="grid-item"><img src="portfolio/card12.jpg" alt="" /></div>
+      <div class="grid-item"><img src="portfolio/card13.jpg" alt="" /></div>
+      <div class="grid-item"><img src="portfolio/card14.jpg" alt="" /></div>
+      <div class="grid-item"><img src="portfolio/card15.jpg" alt="" /></div>
+      <div class="grid-item"><img src="portfolio/card16.jpg" alt="" /></div>
+      <div class="grid-item"><img src="portfolio/card17.jpg" alt="" /></div>
+      <div class="grid-item"><img src="portfolio/card18.jpg" alt="" /></div>
+      <div class="grid-item"><img src="portfolio/card19.jpg" alt="" /></div>
+      <div class="grid-item"><img src="portfolio/card20.jpg" alt="" /></div>
+      <div class="grid-item"><img src="portfolio/card21.jpg" alt="" /></div>
+      <div class="grid-item"><img src="portfolio/card22.jpg" alt="" /></div>
+      <div class="grid-item"><img src="portfolio/card23.jpg" alt="" /></div>
+      <div class="grid-item"><img src="portfolio/card24.jpg" alt="" /></div>
+      <div class="grid-item"><img src="portfolio/card25.jpg" alt="" /></div>
     </div>
 
     <footer>
