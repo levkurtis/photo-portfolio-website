@@ -103,6 +103,19 @@ header {
   display: inline;
 }
 
+.AboutMe {
+  display: flexbox;
+}
+
+.AboutMe img {
+  float: left;
+  width: 400px;
+}
+
+.AboutMe p {
+margin-right: auto;
+}
+
 @media screen and (max-width: 750px) {
   .content {
     flex-direction: column;
