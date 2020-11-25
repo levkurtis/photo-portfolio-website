@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Photography</title>
+    <title>Gallery</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap"
       rel="stylesheet"
@@ -19,7 +19,7 @@
       </div>
       <ul class="navigation-list">
         <li class="navigation-item">
-          <a href="photography.html">Media</a>
+          <a href="gallery.html">Gallery</a>
         </li>
         <!-- <li class="navigation-item"><a href="webdev.html">Webdev</a></li> -->
         <li class="navigation-item"><a href="about.html">About</a></li>
@@ -59,9 +59,8 @@
       <!-- TODO Could be interesting to have a moving slideshow of Instagram page which could link over to it 
   Also include more information so that people can navigate easier through your site   -->
     </footer>
-
   </body>
-  
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
   <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
@@ -73,13 +72,13 @@
       });
     });
   </script>
-    <script type="text/javascript">
-      $('#container').css('opacity', 0);
-      $(window).load(function() {
-        $('#container').css('opacity', 1);
-        $(document).ready(function() {
-  setTimeout('$("#container").css("opacity", 1)', 1000);
-});
+  <script type="text/javascript">
+    $("#container").css("opacity", 0);
+    $(window).load(function () {
+      $("#container").css("opacity", 1);
+      $(document).ready(function () {
+        setTimeout('$("#container").css("opacity", 1)', 1000);
       });
-      </script>
+    });
+  </script>
 </html>
