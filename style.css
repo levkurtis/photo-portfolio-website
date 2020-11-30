@@ -20,6 +20,7 @@ a {
   text-decoration: none;
   color: #000000;
 }
+
 p {
   hyphens: manual;
 }
@@ -27,6 +28,7 @@ p {
 a:visited {
   color: #000000;
 }
+
 h2 {
   font-size: 21px;
   font-weight: 500;
@@ -103,15 +105,6 @@ header {
   text-align: center;
 }
 
-.centerText {
-  text-align: center;
-}
-
-a .centerText {
-  font-weight: 525;
-  text-decoration: underline;
-}
-
 .grid {
   text-align: center;
   max-width: 95vw;
@@ -123,114 +116,9 @@ a .centerText {
   transition: all 0.3s ease 0s;
 }
 
-.aboutme .grid-item:hover {
-  transform: scale(1.015);
-  filter: saturate(1.05) brightness(1.015);
-}
-
-.aboutme {
-  display: grid;
-  grid-template-columns: 1.7fr 1fr 1fr;
-  grid-template-rows: 670px 1150px 400px;
-  gap: 0 3%;
-  margin: 25px 50px;
-  hyphens: manual;
-}
-
-.picOfMe {
-  grid-area: 1 / 1 / 2 / 2;
-}
-.context1 {
-  grid-area: 1 / 2 / 2 / 4;
-}
-.picHotelChocolat {
-  grid-area: 2 / 1 / 3 / 2;
-}
-.context2 {
-  grid-area: 2 / 2 / 3 / 4;
-}
-.Picture-2 {
-  grid-area: 3 / 1 / 4 / 2;
-}
-.context3 {
-  grid-area: 3 / 2 / 4 / 4;
-}
-.gitHub {
-  grid-area: 3 / 1 / 4 / 2;
-}
-.aboutme img {
-  width: 600px;
-}
-.aboutme h1 {
-  text-align: left;
-  margin: 10px 0;
-}
-
-.aboutme h2 {
-  margin: 12px 0px 12px 0px;
-}
-
-.aboutme p {
-  font-size: 1.05rem;
-  text-align: justify;
-  color: #333333;
-  line-height: 24px;
-  margin: 10px 0;
-}
-
-.aboutme span {
-  color: #2c2c2c;
-  font-weight: 550;
-}
-
-.aboutme .grid {
-  text-align: center;
-  max-width: 95vw;
-  margin: 1.5vw auto;
-}
 .grid-item {
   padding: 5px;
   display: inline;
-}
-
-.context1 {
-  position: relative;
-  top: 30px;
-}
-
-.picHotelChocolat {
-  position: relative;
-  top: 100px;
-}
-
-.gitHub {
-  position: relative;
-  top: 40px;
-}
-
-.myButton {
-  box-shadow: inset 0px 1px 0px 0px #ffffff;
-  background: linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
-  background-color: #f9f9f9;
-  border-radius: 6px;
-  border: 1px solid #dcdcdc;
-  display: inline-block;
-  cursor: pointer;
-  color: #666666;
-  font-family: Arial;
-  font-size: 15px;
-  font-weight: bold;
-  padding: 6px 24px;
-  text-decoration: none;
-  text-shadow: 0px 1px 0px #ffffff;
-  position: relative;
-}
-.myButton:hover {
-  background: linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
-  background-color: #e9e9e9;
-}
-.myButton:active {
-  top: 1px;
 }
 
 #main404 {
@@ -238,7 +126,7 @@ a .centerText {
 }
 
 .page404 {
-  margin-top: 100px
+  margin-top: 100px;
 }
 
 .page404 a {
@@ -247,44 +135,6 @@ a .centerText {
 
 #title404 {
   margin-top: 300px;
-}
-
-/* large screen laptop */
-@media screen and (max-width: 1298px) {
-  .aboutme {
-    grid-template-rows: 550px 1030px 400px;
-    gap: 0 3%;
-  }
-}
-
-/* iPad split screen larger sized screen */
-@media screen and (max-width: 1100px) {
-  .aboutme {
-    grid-template-rows: 520px 980px 400px;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  .aboutme {
-    grid-template-rows: 550px 1500px 430px;
-  }
-  .picOfMe {
-    position: relative;
-    top: 50px;
-  }
-}
-
-/* 1/3 of full HD screen */
-@media screen and (max-width: 900px) {
-  .aboutme {
-    grid-template-rows: 580px 1450px 450px;
-  }
-}
-
-@media screen and (max-width: 830px) {
-  .aboutme {
-    grid-template-rows: 700px 1400px 550px;
-  }
 }
 
 /* Ipad split screen medium sized screen */
@@ -303,94 +153,9 @@ a .centerText {
     margin: 15px 0px 15px 0px;
   }
 
-  .aboutme {
-    grid-template-columns: 1fr;
-    grid-template-rows: 330px 750px 1920px 10px 280px 350px;
-    margin: 0px;
-    position: relative;
-    top: -30px;
-  }
-
-  .aboutme p {
-    font-size: 1rem;
-  }
-  .picHotelChocolat {
-    display: none;
-  }
-  .context1 {
-    grid-area: 1 / 1 / 1 / 2;
-  }
-  .picOfMe {
-    grid-area: 2 / 1 / 2 / 2;
-  }
-  .context2 {
-    grid-area: 3 / 1 / 3 / 2;
-  }
-  .Picture-2 {
-    grid-area: 4 / 1 / 4 / 2;
-  }
-  .context3 {
-    grid-area: 5 / 1 / 5 / 2;
-  }
-  .gitHub {
-    grid-area: 6 / 1 / 6 / 2;
-  }
-
-  .aboutme span {
-    color: #333333;
-    font-weight: 400;
-  }
-  .aboutme p {
-    font-size: 1rem;
-  }
   .logo {
     font-size: 1.5rem;
     margin-left: 20px;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .aboutme {
-    grid-template-rows: 330px 750px 1840px 10px 300px 350px;
-  }
-}
-
-@media screen and (max-width: 650px) {
-  .aboutme {
-    grid-template-rows: 350px 750px 1780px 10px 300px 350px;
-  }
-}
-@media screen and (max-width: 600px) {
-  .aboutme {
-    grid-template-rows: 390px 720px 1650px 10px 320px 350px;
-  }
-}
-
-@media screen and (max-width: 550px) {
-  .aboutme {
-    grid-template-rows: 430px 650px 4920px 10px 380px 350px;
-  }
-}
-@media screen and (max-width: 525px) {
-  .aboutme {
-    grid-template-rows: 430px 600px 4700px 10px 380px 300px;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .aboutme {
-    grid-template-rows: 460px 600px 4500px 10px 380px 300px;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .aboutme {
-    grid-template-rows: 450px 550px 4050px 10px 400px 300px;
-  }
-}
-@media screen and (max-width: 425px) {
-  .aboutme {
-    grid-template-rows: 550px 510px 3750px 10px 450px 300px;
   }
 }
 
@@ -411,11 +176,6 @@ a .centerText {
   }
   .grid-item {
     width: 100%;
-  }
-  .aboutme {
-    grid-template-rows: 600px 460px 3530px 10px 470px 250px;
-    position: relative;
-    top: -30px;
   }
 }
 
