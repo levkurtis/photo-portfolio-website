@@ -102,8 +102,6 @@ header {
   margin: 30px 0px;
   text-align: center;
 }
-/* footer {
-} */
 
 .centerText {
   text-align: center;
@@ -233,6 +231,22 @@ a .centerText {
 }
 .myButton:active {
   top: 1px;
+}
+
+#main404 {
+  text-align: center;
+}
+
+.page404 {
+  margin-top: 100px
+}
+
+.page404 a {
+  text-decoration: underline;
+}
+
+#title404 {
+  margin-top: 300px;
 }
 
 /* large screen laptop */
