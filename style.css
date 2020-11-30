@@ -427,6 +427,10 @@ a .centerText {
   .grid-item {
     width: 25%;
   }
+  body {
+    width: 1700px;
+    margin: auto;
+  }
 }
 
 @media (min-width: 2100px) {
