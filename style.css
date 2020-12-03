@@ -74,6 +74,19 @@ header {
   color: #696969;
 }
 
+.galleryNav {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  color: #212121;
+  margin-top: 20px;
+  margin-left: 45px;
+}
+
+.galleryNav li {
+  margin-inline: 20px;
+}
+
 .content {
   display: flex;
   flex-direction: row;
