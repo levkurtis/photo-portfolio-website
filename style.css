@@ -147,19 +147,27 @@ transition: all 0.2s ease 0s;
 
 /* 404 and media queries */
 #main404 {
+  position: relative;
   text-align: center;
+  top: 100px;
+}
+
+#title404 {
+  font-size: 40px;
 }
 
 .page404 {
-  margin-top: 100px;
+ position: relative;
+ top: 100px;
 }
 
 .page404 a {
   text-decoration: underline;
 }
 
-#title404 {
-  margin-top: 300px;
+#uhoh404 {
+  margin-top: 10px;
+  font-size: 28px
 }
 
 /* Ipad split screen medium sized screen */
