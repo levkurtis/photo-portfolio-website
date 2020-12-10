@@ -18,6 +18,15 @@ body::-webkit-scrollbar {
   scrollbar-width: none; /* Firefox */
 }
 
+/* fixes blurry img on scale */
+img {
+  image-rendering: -moz-crisp-edges;         /* Firefox */
+  image-rendering:   -o-crisp-edges;         /* Opera */
+  image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
+}
+
 a {
   text-decoration: none;
   color: #000000;
@@ -102,6 +111,8 @@ header {
 .content-item {
   margin: 15px;
   transition: all 0.3s ease 0s;
+  transform: scale(0.975);
+
 }
 
 .content-item:hover {
@@ -138,11 +149,6 @@ header {
   padding: 5px;
   display: inline;
   transition: all 0.3s ease 0s;
-}
-
-.grid-item {
-  padding: 5px;
-  display: inline;
 }
 
 /* 404 and media queries */
