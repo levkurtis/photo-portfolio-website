@@ -7,7 +7,7 @@
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	-webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
@@ -116,8 +116,8 @@ header {
 
 .grid img:hover {
   opacity: 0.9;
-cursor: pointer;
-transition: all 0.2s ease 0s;
+  cursor: pointer;
+  transition: all 0.2s ease 0s;
 }
 
 .content a {
@@ -157,8 +157,8 @@ transition: all 0.2s ease 0s;
 }
 
 .page404 {
- position: relative;
- top: 100px;
+  position: relative;
+  top: 100px;
 }
 
 .page404 a {
@@ -167,7 +167,7 @@ transition: all 0.2s ease 0s;
 
 #uhoh404 {
   margin-top: 10px;
-  font-size: 28px
+  font-size: 28px;
 }
 
 /* Ipad split screen medium sized screen */
@@ -246,13 +246,22 @@ transition: all 0.2s ease 0s;
   }
 }
 
+/* Making images undraggable*/
+.unselectable img, a {
+  user-select: none;
+  user-drag: none; 
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
 
 /* The Modal (background) */
 .modal {
   display: none;
   position: fixed;
   z-index: 1;
-  padding-top: 100px;
+  padding: 40px;
   left: 0;
   top: 0;
   width: 100%;
@@ -262,28 +271,33 @@ transition: all 0.2s ease 0s;
 }
 
 /* Modal Content */
-.modal-content {
+/* .modal-content {
+  height: 100%;
   position: relative;
   background-color: #fefefe;
   margin: auto;
-  padding: 0;
-  width: 90%;
+  width: 90vw;
   max-width: 1200px;
+} */
+
+.mySlides img {
+  max-width: 100%;
 }
 
 /* The Close Button */
 .close {
-  color: black;
+  z-index: 2;
+  color: rgba(0, 0, 0, 1);
   position: absolute;
-  top: 10px;
-  right: 25px;
+  top: 25px;
+  right: 45px;
   font-size: 35px;
   font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-  color: rgb(0, 0, 0, 0.7);
+  color: rgba(255, 255, 255, 0.5);
   text-decoration: none;
   cursor: pointer;
 }
@@ -299,10 +313,10 @@ transition: all 0.2s ease 0s;
   cursor: pointer;
   position: absolute;
   top: 50%;
-  width: auto;
+  width: 245px;
   padding: 16px;
-  margin-top: -50px;
-  color: white;
+  margin: -40px;
+  color: rgba(0, 0, 0, 0.3);
   font-weight: bold;
   font-size: 20px;
   transition: 0.6s ease;
@@ -318,7 +332,7 @@ transition: all 0.2s ease 0s;
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover,
+/* .prev:hover,
 .next:hover {
   background-color: rgba(255, 255, 255, 0.8);
-}
+} */
