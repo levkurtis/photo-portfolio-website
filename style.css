@@ -277,14 +277,14 @@ header {
 }
 
 /* Modal Content */
-/* .modal-content {
+.modal-content {
   height: 100%;
   position: relative;
   background-color: #fefefe;
   margin: auto;
   width: 90vw;
   max-width: 1200px;
-} */
+}
 
 .mySlides img {
   max-width: 100%;
