@@ -20,6 +20,7 @@
       integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="css/lightbox.min.css">
   </head>
 
   <body>
@@ -61,10 +62,14 @@
     <!-- Content of the page -->
     <div class="grid unselectable">
       <div class="grid-item" onclick="openModal();currentSlide(1)">
-        <img src="media/portfolio/card1.jpg" alt="Sunny day in Heukseok-dong" />
+        <a href="media/portfolio/card1.jpg" data-lightbox="Seoul">
+          <img src="media/portfolio/card1.jpg" alt="Sunny day in Heukseok-dong" />
+        </a>
       </div>
       <div class="grid-item" onclick="openModal();currentSlide(2)">
-        <img src="media/portfolio/card2.jpg" alt="Buddha Statue at Jogyesa temple" />
+        <a href="media/portfolio/card2.jpg" data-lightbox="Seoul">          
+          <img src="media/portfolio/card2.jpg" alt="Buddha Statue at Jogyesa temple" />
+        </a>
       </div>
       <div class="grid-item" onclick="openModal();currentSlide(3)">
         <img src="media/portfolio/card3.jpg" alt="Day in Myeong-dong" />
@@ -180,7 +185,20 @@
     </div>
     <footer></footer>
   </body>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/lightbox.min.js"></script>
+  <script>
+    //options for lightbox2
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true,
+      'fadeDuration': 200,
+      'disableScrolling': true,
+      'wrapAround': true,
+      'showImageNumberLabel': false,
+      'fitImagesInViewport': true
+    })
+</script>
   <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
   <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
   <script type="text/javascript">
@@ -200,6 +218,4 @@
       });
     });
   </script>
-
-  <script src="js/gallery.js"></script>
 </html>
