@@ -2,7 +2,6 @@
   padding: 0;
   margin: 0px;
   box-sizing: border-box;
-  max-width: 100%;
 }
 
 body {
@@ -123,6 +122,9 @@ header {
 .content img {
   width: 100%;
   height: auto;
+}
+.grid img {
+  max-width: 100%;
 }
 
 .grid img:hover {
@@ -255,7 +257,6 @@ header {
 /* Making images undraggable*/
 .unselectable img, a {
   user-select: none;
-  user-drag: none; 
   -moz-user-select: none;
   -webkit-user-drag: none;
   -webkit-user-select: none;
